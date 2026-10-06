@@ -1,0 +1,31 @@
+name: Lean
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: false
+          use-mathlib-cache: true
+      - name: Check PDE foundation and theorem axioms
+        run: bash scripts/check.sh
+      - name: Preserve verification records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-verification
+          path: |
+            reports/latest.json
+            logs/

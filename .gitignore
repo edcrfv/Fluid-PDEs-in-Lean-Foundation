@@ -1,0 +1,10 @@
+/.lake/
+/build/
+/logs/
+/reports/latest.json
+__pycache__/
+*.pyc
+.DS_Store
+/.danus/
+/.tools/
+/.locks/

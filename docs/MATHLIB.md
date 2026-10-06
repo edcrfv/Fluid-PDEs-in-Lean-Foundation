@@ -1,0 +1,39 @@
+# Mathlib reuse inventory
+
+Inspected revision: `85e3a25e006c35636f0e53b0e9296caca2685bc0`, Lean `4.34.0-rc2`.
+This is an inventory of that snapshot, not a claim that all other PDE infrastructure is absent.
+
+| Need | Existing source / declarations | Local decision |
+|---|---|---|
+| Test-function separation | `Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff`; `ae_eq_of_integral_contDiff_smul_eq` and open-domain variants | Reuse for a.e. uniqueness of weak derivatives |
+| Test functions / distributions | `Mathlib.Analysis.Distribution.TestFunction`, `Distribution`, `ContDiffMapSupportedIn` | Evaluate as the bundled open-domain interface before expanding the representative API |
+| Local integrability | `Mathlib.MeasureTheory.Function.LocallyIntegrable`; compact-support product integrability | Reuse; justify both sides of each weak identity |
+| Bessel potential Sobolev spaces | `Mathlib.Analysis.Distribution.Sobolev`; `TemperedDistribution.MemSobolev`, Fourier characterization at `p=2`, derivative and Laplacian maps | Preserve this existing construction; later prove compatibility with integer-order weak-derivative spaces |
+| Smooth Sobolev inequalities | `Mathlib.Analysis.FunctionalSpaces.SobolevInequality`; `eLpNorm_le_eLpNorm_fderiv`, `_of_eq`, `_of_le` | Import now; density extension to weak spaces is new work |
+| Smooth approximation | `Mathlib.Analysis.Calculus.BumpFunction.SmoothApprox`; `UniformContinuous.exists_contDiff_dist_le` | A checked uniform-approximation wrapper; not yet Sobolev-norm density |
+| Convolution regularity | `Mathlib.Analysis.Calculus.ContDiff.Convolution`, `BumpFunction.Convolution` | Candidate tools for mollification and derivative commutation |
+| Lax–Milgram | `Mathlib.Analysis.InnerProductSpace.LaxMilgram`; `IsCoercive.continuousLinearEquivOfBilin` | Already proved upstream. Add variational/load-functional adapters, not a duplicate proof |
+| Riesz representation | `Mathlib.Analysis.InnerProductSpace.Dual`; `InnerProductSpace.toDual` | Reuse to turn a continuous load into the Hilbert-space right-hand side |
+| Weak topology | `Mathlib.Analysis.LocallyConvex.WeakDual`, `Mathlib.Analysis.Normed.Module.WeakDual` | Audit compactness hypotheses and sequential interfaces for the chosen energy spaces |
+| Grönwall | `Mathlib.Analysis.ODE.Gronwall`; `norm_le_gronwallBound_of_norm_deriv_right_le` | Reuse after justifying the energy derivative |
+| Bochner integration | `Mathlib.MeasureTheory.Integral.Bochner.*` | Base for energy-space time integrals and traces |
+| Bounded linear evolution | `Mathlib.Analysis.SpecialFunctions.Exponential`; `hasDerivAt_exp_smul_const'` | Construct the actual global finite-dimensional mass/stiffness evolution |
+| Finite-dimensional mass inverse | `LinearMap.injective_iff_antilipschitz`; Lax–Milgram's coercive equivalence | Prove mass coercivity from injectivity, then invert it; do not identify the H¹ norm with physical L² mass |
+| L² density | `Submodule.orthogonal_orthogonal_eq_closure`; open-domain smooth-test separation | Prove H₀¹ value range dense in L² |
+| Bochner Hilbert space | `Mathlib.MeasureTheory.Function.L2Space`; `L2.inner_def`, `memLp_two_iff_integrable_sq_norm` | Construct actual L² time classes and express their norm via energy integrals |
+| Weighted time tests | `ContinuousLinearMap.compLpL₂`, `L2.integrable_inner`, Riesz representation | Build bounded bilinear tests, justify integrals and pass through weak convergence |
+| Weak time differentiation | Hölder via `MemLp.smul`, Bochner `ContinuousLinearMap.integral_apply`, open-domain compact smooth test separation | Justify vector-valued weak time differentiation and prove derivative uniqueness; apply to the actual heat mass trajectory in the dual energy space |
+| Time primitive and trace | `Integrable.smul_prod`, `integral_integral_swap`, `continuousOn_primitive_Icc`, smooth-test separation | Prove triangular Fubini, reconstruct a continuous representative from the integrated equation and retain its initial value |
+| Absolute continuity and uniqueness | `IntervalIntegrable.absolutelyContinuousOnInterval_intervalIntegral` for scalar norm primitives, `IntervalIntegrable.ae_hasDerivAt_integral` for Banach-valued primitives, `AbsolutelyContinuousOnInterval.integral_deriv_eq_sub` | Transfer absolute continuity by increment bounds; prove physical energy monotonicity of a time primitive and integrated heat uniqueness |
+| Nested orthogonal projection | `Mathlib.Analysis.InnerProductSpace.Projection.Submodule`; `starProjection_tendsto_self` | The H¹ adapter uses the existing `massProjection` with the inherited inclusion, its best-approximation bound and dense trial approximation; no new orthogonal decomposition theorem is needed |
+| Symmetric stiffness energy | `HasDerivAt.clm_apply`, the existing mass operator identity, scalar FTC | Test finite heat evolution by its physical time derivative; obtain H¹ contraction and a uniform velocity bound, then extract state and velocity on a common subsequence |
+| Vector time integration by parts | `intervalIntegral.integral_smul_deriv_eq_deriv_smul_of_hasDerivAt` | Reuse for the closed-interval identity with the prescribed initial value |
+| Closure of physical time equations | Bochner `ContinuousLinearMap.integral_comp_comm`, Riesz representation on L², `ext_inner_left` | Pass scalar tests through joint weak state/derivative convergence, then recover the vector equation and its continuous physical primitive |
+| Characteristic chain rule | `Deriv.Comp`, `Deriv.Prod`; `HasFDerivAt.comp_hasDerivAt`, `HasDerivAt.prodMk` | Time-independent wrapper and joint space/time material chain rule; a trajectory is supplied, not constructed |
+| Coordinate fluid product rules | `FDeriv.Mul`, `FDeriv.Prod`, `FDeriv.CompCLM`; `pi_eq_sum_univ'` | Reuse actual Fréchet derivatives for scalar/vector products, conservative mass and momentum, with explicit physical coordinate dot products |
+| Newtonian stress | `FDeriv.Symmetric`; `ContDiffAt.isSymmSndFDerivAt` | Derive mixed coordinate partial symmetry from C² and prove the constant-viscosity stress divergence identity |
+| Smooth convection cancellation | `LineDeriv.IntegrationByParts`; `integral_mul_fderiv_eq_neg_fderiv_mul_of_integrable`, compact-support derivative and integrability lemmas | Justify all products and apply whole-space integration by parts to the compactly supported kinetic energy density |
+
+Browse source at the pinned revision:
+[Mathlib](https://github.com/leanprover-community/mathlib4/tree/85e3a25e006c35636f0e53b0e9296caca2685bc0/Mathlib).
+Search actual hypotheses and namespaces before introducing duplicate infrastructure.

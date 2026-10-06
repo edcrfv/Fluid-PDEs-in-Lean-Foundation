@@ -1,0 +1,2577 @@
+{
+  "checked_at_utc": "20261006T163217Z",
+  "status": "passed",
+  "source_sha256": {
+    "PDE/AbsoluteContinuity.lean": "fe7f820540d30d5b36b2339f657dfd872f271087df5866df68bea4cdd75e676b",
+    "PDE/BoundedSmoothApproximation.lean": "095163d2d859b9570dd99b6342191c554b3c662670d971d02169a3bb2a0c7b2c",
+    "PDE/ClassicalWeakDerivative.lean": "a4e06975792f779a951036fb1107e0efd9912452cad93ea4a8050889c817b829",
+    "PDE/CompressionInterpolation.lean": "f46b7c84439ea4730926ddce023b8cbe774e6e52fe74ce29f4f9469a6870068a",
+    "PDE/ConservationLaw.lean": "f3b523fa03a13dfcaa326f5196e6a29d936c2a857ce82cd10c627103f7075216",
+    "PDE/ContinuityEquation.lean": "3ac4bfc60fc760570c0170574eb0f09065b3697cdec45f57127fdd96974abdc6",
+    "PDE/CoordinatePermutation.lean": "1c902357b70c8445099160fa629d6aa641cc1b288d4772c0ca0e087ca46dce68",
+    "PDE/CountableTesting.lean": "fc6b68cc05d8be5134ff5da954c350bbbeddc8b9bf1c387db259ad53033620b3",
+    "PDE/CubeClosedMeasure.lean": "2d3f6d48368b8eab1ef7e868efe150bcd8a463d2109423224e09c60f55600d9b",
+    "PDE/CubeCompression.lean": "90842342c84ecf3b6254eeb9ff5babb13cac69a43a3a8c184aaaf9d3a0c6d939",
+    "PDE/CubeDensityEnergy.lean": "3953728c3904ff5f137f5aa6c5eb74dfe49198a6536f18676d87c73a6ecbf544",
+    "PDE/CubeGridBound.lean": "1c15c5dae421cb1a2152885e7b2a2c18aa54705a74d64649a7e5b680822044d3",
+    "PDE/CubePoincare.lean": "86071422243028c5dad17e494dc7dafc24f4f908bd57a134512f067dc9941eed",
+    "PDE/CubeSobolevLimit.lean": "b219a9937595d700bfececf63a7ef35ca585604b89995928ea090ae3e36971d3",
+    "PDE/CubeWeakPositivePart.lean": "ab56e1e7e4d40cffc7973b276e0757d0bb9c9fec1be9b015e3c05f4d4735636f",
+    "PDE/CubeWeakReassembly.lean": "e17cce8b58844554d2fa0e4ccc70eb9e256c08d512352da8508f0b1328493296",
+    "PDE/CubeWeakSlices.lean": "fd431e12c57a4dbcf8463be723739851151578ba4b21d08cced2eb98ec03110e",
+    "PDE/CumulativeEnergy.lean": "8988e67950b600da63e3f6e8ce982866408016907a4a0443df89ae1140d82708",
+    "PDE/CylinderSpatialSlicing.lean": "d30f08084c1876c9aa6bc2890b77ee4023abb5d64b41ca5f461126fb61fd1d5b",
+    "PDE/DampingEnergy.lean": "f96197d934eeecc4f0d6d154604f096f029f5dd83b170e44806a352807d1a11c",
+    "PDE/DerivativeLevelSets.lean": "474ef7728875ed6d10d9a9cdbf27d6399d61d300eaf829f661f5a742a2d12d80",
+    "PDE/DistributionalInterval.lean": "3bfb44f2706d5fc4f64cdfc6e0b6ab5ef31dde509b53f97fe2692783978981d0",
+    "PDE/EllipticWeakSolutions.lean": "e7a2a6191153a6d3b75ed1990720065390eb3f840d2a98cf14881104e4fc78c2",
+    "PDE/EntropyFatou.lean": "d6fbb7e9f8b10d51119d6a4d458f2cd756b740034b7766de04e043bece3a873b",
+    "PDE/EntropyTimeTests.lean": "01a24e0dcb8ad1e64fa71e9c06dfbc0d6259825a344aff405eec8a9c7507879a",
+    "PDE/ExtendedEntropyProduction.lean": "00181c18f0941a0fae813f7e8768fbfd6620f9ba761096d26c9279f9e50206c8",
+    "PDE/Galerkin.lean": "eaad9096f8c029ffb352d0a8fb936a288a00650bc486a3394810005be34c98d2",
+    "PDE/GalerkinConvergence.lean": "a0bb82274e42930c221c4acc28c9848bef4b83d5ea55307acfa351a227832b46",
+    "PDE/HeatBochner.lean": "5bfeb041da453118f522af8bbe01bd9ae31d8068b8573edca63e0d128e0ce7f0",
+    "PDE/HeatDualTrace.lean": "bffe5edee943ae0ab05a8424186767a41bcfb5bec48e1f7d40c7946fb02a59a3",
+    "PDE/HeatGalerkin.lean": "e35e57512e6791b0dd5daeae2d24d3becb49ef3b92454fa7e6ba9dc1bad3ec00",
+    "PDE/HeatH1Bochner.lean": "b9b3da316ce3b6fe4858bf36fcae32ee76a76fa224d281bc4c1058aae391824b",
+    "PDE/HeatH1InitialData.lean": "879a6809de9bc5403f6396decf56813f28710851775011f4c81afca05e5cf2e2",
+    "PDE/HeatH1TimeTrace.lean": "aeb88d3ca3a3a6aa2742f5fa3aa0f5a8113b591f5cafddd1002fc4d466346c58",
+    "PDE/HeatH1WeakLimit.lean": "84651bf9a9d865f00930b2aad5408d680bf8a5adc9a0efe3e9290b2612696b22",
+    "PDE/HeatHigherEnergy.lean": "7fc32e6d7450f8ca9813ea746a2a8eb42b6807868b3180aea0d0e50c4bc543de",
+    "PDE/HeatInitialData.lean": "0bdf41a31e180519fbee76534fc3bbdacfa84863907634906c4a4fc44fe8bb98",
+    "PDE/HeatIntegratedGalerkin.lean": "3b9e845e13f4033241d6f214d6a28fc7168739db99967f21f3dce1e58d69aeae",
+    "PDE/HeatTimeDerivative.lean": "b131468cdeb9164530a0e1702f36c520c0493b9023c06af8d4428c5045a80259",
+    "PDE/HeatUniqueness.lean": "8f4414f2c0b4a6b6ec79edcfba6cd2c6fff2001995da0e258bf9611180c385b3",
+    "PDE/HeatWeakForm.lean": "ffd226fd4623109f92a213a8434d80a5d7c1880b53823c20367cf6c657a6ae0f",
+    "PDE/HeatWeakLimit.lean": "26ecd8887e620eaeeeea30b48a6aac03cd06ff29e80e511e609527dfd6f3f201",
+    "PDE/HigherLpConvergence.lean": "c835928e0d1441f9298468253ef6b86f7bc49e54327fb194c2483440c14ec951",
+    "PDE/IncompressibleEnergy.lean": "0eedb2e176d31714fa5b1923dc824af0ee1062706af962c2e6db88d066b9d4f4",
+    "PDE/IntervalPositiveDistribution.lean": "df381dc48bc087055a5b988990a5eeda926f1757c8ebbe3132287527e99a6a5b",
+    "PDE/IntervalTestFunctions.lean": "cf5501c014997e9f7610d5ea4df83791b1502473f32e99c2aabe56e025ea5a15",
+    "PDE/IntervalWeakBound.lean": "29cda0b6ffdc60b1f2e6dd4753b61b1c49a226cd1525f3e23d4ef999b07dcea9",
+    "PDE/IntervalWeakChainRule.lean": "a81fdd9e45391883fa696ccdb0dc52faf15d07427209b9acc49e24aedddd3d36",
+    "PDE/IntervalWeakNonnegativeChain.lean": "535cbde8e64b7050cbfbd472c3aebf08765fdaee7a9ef9932221437b41f751b0",
+    "PDE/IntervalWeakPositivePart.lean": "e4842fe56627263850110e84de76599b56f54e7fcaa0516347d2a8c6624a82a4",
+    "PDE/IntervalWeakSlicing.lean": "63a41290be68a4df2050e74f81de4abc9c372e3fb988bf582d0c1be98249f8dd",
+    "PDE/L2SquareLimit.lean": "ceee9adb749a26aca1d6af3623fdf95672c30caf669e3c1cb7e31fedcc41943b",
+    "PDE/LaxMilgram.lean": "7013dc7e8def6f6c8177828e836e196617f5f03b8b2f27563381f121f11538b4",
+    "PDE/LinearEvolution.lean": "aa987c50ef594c6416504474ee769506780950ba372876098c26ccf948e34053",
+    "PDE/LocalPrefixH1.lean": "cb7576c1d69b39b23f30d3f29811a85f70dc18ca17ac7365be3d1e30483f0734",
+    "PDE/LpPower.lean": "5aef5b781a8aef9967bfab800dd5b10657fed663994131ece9de4a6164f22388",
+    "PDE/MassEvolution.lean": "47dbba268294192010b1961427ba286400b0c8846b3cc8498db25e5e69f67745",
+    "PDE/MassForm.lean": "eeaedf61119389fb6965a789c6f0639f1a9f1f9184532a7b86723cbf5e4a27ae",
+    "PDE/MassHigherEnergy.lean": "f1c9e889c0351b46d0ca03f8f3dce9dcce6e5a23a342cf83afa5455a3cb47e7e",
+    "PDE/MassProjection.lean": "cab688d6c24631a3ec733a86a6837a496dda09b87a991266196ae03dd50bc3a1",
+    "PDE/MaterialDerivative.lean": "e19b4a1bfda4b8f5cfe095afc646d6fa005801842d81843b0eec72281b08fe60",
+    "PDE/MeanPoincare.lean": "551c7bb49371fc98b50a6f9c2570a01013d57fae0b0574a1c5c16ad927cc0097",
+    "PDE/Mollification.lean": "87c72e40c9db207224e5110bf9d94cebe4385525fcc46387d1574fb2bfa5d5fb",
+    "PDE/MomentumForms.lean": "063c67964d3f2e7467e9d73feed52671e3bd77334c2baad98bd2b6b22259cb12",
+    "PDE/MovingMultiplier.lean": "43eaedfc6fdd91d48eee38a24a3f254b216fcfcfa543789e81a8d8014acddb43",
+    "PDE/NavierStokesPrerequisites.lean": "7f78d6b341de807dc359e6d50aa95ba1e06de7bb293d1efc2ba4f802e5b50a03",
+    "PDE/NewtonianStress.lean": "99719a572df2dbaff1561a0f8e7e57748f8223953e2b3df7248cf14d8862071d",
+    "PDE/OneSidedPositivePart.lean": "806d453abe1a5916de4c707cc6278c9f2d3ee737b05f8cba7fc6a59e3e664317",
+    "PDE/ParabolicEnergy.lean": "2b5249767265090a25177a5cb37406e7a6dcf671963902e985653460fae429b5",
+    "PDE/Poincare.lean": "37b56ff49a1ebe4e1c9767c87632842a8d54fc6331b572fe6c7cafb7d32c5938",
+    "PDE/PoissonGalerkin.lean": "b07f9aa34639319d95b775a30491f41a0eb05fbde0c987202d9a21221f6ec56d",
+    "PDE/PrimitiveEnergy.lean": "fc7e0f78be2ff20283f9018e3163ade9484b4bdbaae4fdf2b73971ba041f9bb4",
+    "PDE/ProductL2Bound.lean": "215a78eaca60b905a790c5c121d7770a667de10b3f008b9708f9a8bd30c6333f",
+    "PDE/ProductMeanPoincare.lean": "57494d92ceddc7a51dd94dd8cf5eba54e013fd9890519cce1ac969d14056bdde",
+    "PDE/ProductWeakSlicing.lean": "7dd02841da4dbad8999df4bff53161bdb40108a95bad9aef0be4eaf4542a8ff1",
+    "PDE/ReciprocalConcavity.lean": "0e88a8ce7eb996e660ed144f973aa7be4d17904e8918f2e4b898193c8c4d0728",
+    "PDE/ReciprocalConcavityLimits.lean": "e056d54f77513ddd82471f600170c37b3c013464083e395482934d90671a312f",
+    "PDE/RellichKondrachov.lean": "5ca5cd214d1a420dfc3dc95c993b9f50ab899c05ddef8da713bf47f8d1509654",
+    "PDE/SmoothDeficit.lean": "99e5d3729dfc68d9b0fb993550e15cd640eb8c14be753f42898e6c909227e1fe",
+    "PDE/Sobolev.lean": "5f1f21ebc1de6af8fc4e0c45b63e62ec6eedc24eff80a7e425333e9d993de35d",
+    "PDE/SobolevCompactness.lean": "7596f0d14749112578eef76f3dbe367d79c4eed3a22301fbec8d549028d7e8a5",
+    "PDE/SobolevCube.lean": "ca0228c0eb1d4fda4e9ad6c31d5a8319e036dceb92a8e3a9424227fdfa08fbf2",
+    "PDE/SobolevCubeSix.lean": "d62e17eca16e53020aa14d582205ca232736371deb5c04b1e0d509d3364bdc20",
+    "PDE/SobolevDensity.lean": "e54ef4e43b26e955836d3d74b14f17e62c24d9a573fe49055d96a0840ba90c9f",
+    "PDE/SobolevEmbedding.lean": "7ebc29bf30245c691cab45ef5824a7812474a589f2f892e09cd242729ee55095",
+    "PDE/SobolevH1.lean": "e3f2ca40b6839d547250d59e67e8d426734e4b922e13ae58353b50502a5beebe",
+    "PDE/SobolevInterval.lean": "862dfc04440be323ee3214f0ddf782189998a8a5e5b48b206b5beef99f3da663",
+    "PDE/SobolevSlicing.lean": "3072575da5ada27930006b3ed412af62fd73a6dcbeddaf341dd5e42bac295145",
+    "PDE/SobolevTruncation.lean": "30660ba72160660f84b9175b9bac97641946b69c8c46f65a6ac4ad5e3bf9eb86",
+    "PDE/SobolevZero.lean": "967718e731f89f3f471c3c8c5c04dd4992726f8ee32f552caaba569ff5c4ae86",
+    "PDE/SpatialH1Family.lean": "afaab0cc38af8421a9a2bf344b9ce3266ac08af3d3319445abd5f7529bb17917",
+    "PDE/SpatialH1Prefix.lean": "f244443248b3ec7c2e311796ca246fedaf520ace31928c2137acd66c7861c511",
+    "PDE/SpatialWeakSlicing.lean": "d1914557cc09430a7810789fac7eeffedec48f61460b6fe079e1112f6a7a01bb",
+    "PDE/SublinearDiffusion.lean": "73625c508c3642b522a5d5ad7fe74095f38d90ec961d7e502c0290b325fccbc2",
+    "PDE/TerminalSliceConvergence.lean": "ab4b92fc7bce3b461b7d019b29fac992778c50787d8be1c12f67870572b31423",
+    "PDE/TimeIntegral.lean": "3bdc9b75b014000c5fba501a05f7e2477d8f53b34a1a71da9fd273563492b384",
+    "PDE/TimeIntegrationByParts.lean": "63c1845c85e32c2916e9df0b34d26f5c5e87ed19b8b6379be18a508a158be08c",
+    "PDE/TimeLinearTesting.lean": "88cc1f0294bec7764311ac8d7c9d41d443624886da02dd82bafafbdb1a50132a",
+    "PDE/TimePairing.lean": "4bf138136208d72216833a2175d8d44c9f65858c4155fdc577ef3c487e4b978f",
+    "PDE/TimePrimitive.lean": "ec172aae4f8f8548d6780dcb16a8314917e4a09093cd85daed58a35f7bdb8be3",
+    "PDE/TimeWeakLimit.lean": "1a1e56a26f08c6d845608b382b1d486f255d959d80306fbfc1bb957d9b460f81",
+    "PDE/Transport.lean": "6b0b9d15be75aa63452bf9f8f09453166f3088f4b06f1179f4b1c327ede2aae1",
+    "PDE/UnitCubeCoordinates.lean": "327e9d6b587fea7fc1fc21944f5ae29ecc0cf8cec07ec361faba7314bb7a9267",
+    "PDE/VectorCalculus.lean": "c23e2077a7ed10b8697974382e137cd6542f369d4007a172fd91935c6259623c",
+    "PDE/WeakCompactness.lean": "46b9a346ea07321eae5c6e5e0d9da73e6b441fa8186f3526b9fe625e448dcd74",
+    "PDE/WeakCubePoincare.lean": "4d35a2cb0b590d0786f63cec16ae0e13a1afa54d48bf7aab8d422b3ee2cd928c",
+    "PDE/WeakCubeSobolev.lean": "f031f2bc19c2a01c1e4664e8d6437af67f20f882c8b8dc639ded1f1c2f4fdd7e",
+    "PDE/WeakCubeSobolevSix.lean": "2442770c8a3b2a524092a2da0c146b999a5a28dc24228af642f247c1b46babde",
+    "PDE/WeakDerivative.lean": "1037cb020312e92e28c1bac1111a36bbeb22e9e99eb614ac748e1c5526dc1cd7",
+    "PDE/WeakDerivativeLimit.lean": "71b6eb18c3efe54b619a6ac039677a7d97b30dbc29f5ae5c0d902be0bcb811a1",
+    "PDE/WeakDerivativeOn.lean": "198104773d86c373c957caa9454bd8ca6a5e2470b3a84904c2efef7e332b466c",
+    "PDE/WeakEnergyBudget.lean": "3b072b81e2d7b8eec8592012064868adedc3bcae5b0ef233d90e84bf36914924",
+    "PDE/WeakEntropyProduction.lean": "313c7043f96e0e8822def6b7017f601339215916cd5848c97ac75193864ee03a",
+    "PDE/WeakIntervalPoincare.lean": "79e244b7826492162713bb80e3fa6ac681d7aa677eab4c57c265ca903c64e3d9",
+    "PDE/WeakPartialCompactness.lean": "0253bda7e77d4cc1d7b418dd7f7127e9bbcfb15ddb648ab31d334cf90965132c",
+    "PDE/WeakTimeDerivative.lean": "5fa5ab601d08ee1e9ff5d62c044b32eae7bf556bf9701f85625b62a4a274fce3",
+    "PDE/WeightedEnergy.lean": "66a06abfad35541c2ffd8e563adbf255eafcf066bbc955226f0086e4496b20d7",
+    "PDE/WeightedEnergyReal.lean": "7298034f02727bdc10d01088f1998a25ae58f2b14c341ab907317dce2e53a4e4",
+    "PDE/WeightedGradientYoung.lean": "cd7f6528fe2ad6a22bbc7a03cdb2b97c59072f928d08d335eab1b20072540166",
+    "PDE/WeightedInterpolation.lean": "ced875f400a1a6805dd62522641b54acc2993f1c9cbceabfa24b17eea2af852b",
+    "Checks/Axioms.lean": "d32e9feaa9ad7b84fa0bfb521231a7377492593dc74f94a799c8cf7f7be23eb1",
+    "Checks/DistributionalIntervalExamples.lean": "1dfeb7da5dd1b4a01637ffb240c11c9135beb60bb504fa16dcd381e94f534b66",
+    "Checks/Examples.lean": "7f15d10249d97023765b98f0d6a0071dc4e5bb8ef92460dbdbd6b6b271aea298",
+    "Checks/FluidExamples.lean": "3865266189f4c0598caa7e396a94500fdcb18e8e90106bf0b4ed618b19317a4e",
+    "Checks/MeanPoincareExamples.lean": "7498c797d94df7a3f313339ca672153c1e17c63a51bf951da61c7bb2706fda96",
+    "scripts/lean-limited.py": "8fdb20f752c08b49a26561a9bd09a866af079bd6dbd8259bc53869269d6fb044",
+    "scripts/limited-toolchain.py": "4c8963b31692291a771d693bd23e1927bdf2b2d1e30306fb59ed87e71214b45b",
+    "scripts/env.sh": "e5c61add22b3e83223760660b9d9d5dc673984469f4b31292f1515b6e32d04b2",
+    "scripts/verify.py": "dbac92150d58f01d0d8b6cc3b26ada5cbdaf8438fa895462c0cae6fec961ae62",
+    "scripts/check.sh": "60119e34f14f18e7827239f2fe9216028d7940a90be150eebaf91ae6050fa9c4",
+    "PDE.lean": "3d7806b06152c3c20f1bb3cb9a717520990e3bae29c13baa6078d8d72d426206",
+    "Checks.lean": "436da2e97fbf546af679de87cea6017641c1b754d38853616b3be5a3ecad015a",
+    "lakefile.toml": "4cc1200a364b3c1c8a8be3b3d5e472bf13a9398115d216fa26e70b8a56045879",
+    "lake-manifest.json": "46601cbd7bcfe0d99a3c4448cb62a40c5053212e38b9020e4becaadd70c93eb6",
+    "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+  },
+  "scope": "Shared PDE foundation and four example modules; all retained named public roots have transitive Lean axiom audits. Independent replay is not included.",
+  "build_targets": [
+    "PDE",
+    "Checks"
+  ],
+  "independent_kernel_replay": false,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "logs/20261006T163217Z/0.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "PDE",
+        "Checks"
+      ],
+      "exit_code": 0,
+      "log": "logs/20261006T163217Z/1.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "/home/az/Desktop/test/Fluid-PDEs-in-Lean/build/Fluid-PDEs-in-Lean-Foundation/scripts/lean-limited.py",
+        "-DwarningAsError=true",
+        "Checks/Axioms.lean"
+      ],
+      "exit_code": 0,
+      "log": "logs/20261006T163217Z/2.log"
+    }
+  ],
+  "theorems": {
+    "PDE.HasWeakPartial.zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartial.add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartial.smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartial.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.MemW1p.zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.MemW1p.add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_unique_variationalSolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsVariationalSolution.norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.galerkin_orthogonality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_smooth_uniform_approximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasDerivAt_along_characteristic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsTestFunctionOn.mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsTestFunctionOn.coordDeriv_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsTestFunctionOn.coordDeriv_hasCompactSupport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsTestFunctionOn.coordDeriv_tsupport_subset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integrable_mul_of_locallyIntegrableOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.setIntegral_mul_eq_integral_of_tsupport_subset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.integration_by_parts_global": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasWeakPartialOn_univ_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasWeakPartialOn_of_contDiffOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasWeakPartial_of_contDiff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.testPairing_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weakResidual_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.mem_h1Subspace_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.h1Subspace_isClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.hasWeakPartialOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.value_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.norm_sq_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsTestFunctionOn.zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsTestFunctionOn.add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsTestFunctionOn.smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.h1CompleteSpace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.norm_value_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.norm_derivative_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.value_ofFunction_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.derivative_ofFunction_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.value_ofTestFunction_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.derivative_ofTestFunction_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.testFunctionToH1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.h10CompleteSpace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.exists_testFunction_sequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.induction_of_isClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.norm_value_ofTestFunction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.norm_derivative_ofTestFunction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.norm_clm_le_sum_coordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.eLpNorm_fderiv_le_sum_coordDeriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.poincare_testFunction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lpNorm_two_eq_sqrt_integral_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_sq_sub_const": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_sq_sub_mean_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_abs_le_sqrt_measure_mul_sqrt_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.abs_sub_left_le_sqrt_interval_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.interval_mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_eq_mean_of_weak_derivative_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasL2TimeDerivative.exists_absolutelyContinuous_representative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasL2TimeDerivative.mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_normalized_interval_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_compact_primitive_on_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_ae_eq_const_of_compact_weak_derivative_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.exists_integral_representative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.exists_absolutelyContinuous_representative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.integration_by_parts_C1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.isOpen_intervalDomain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.intervalLift_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_intervalLift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_interval_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.to_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.exists_interval_absolutelyContinuous_representative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.interval_mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_forall_continuous_tests": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_hasWeakDerivativeOnInterval_of_test_identities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_exists_interval_AC_representative_of_test_identities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_hasWeakDerivativeOnInterval_of_product_tests": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_exists_interval_AC_representative_of_product_tests": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.isOpen_intervalCylinder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.cylinderLift_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_cylinderLift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.ae_interval_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.ae_interval_AC_representative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.ae_interval_mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.absolutelyContinuous_comp_contDiff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasWeakDerivativeOnInterval_of_absolutelyContinuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.comp_contDiff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.permuteCoordinates_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.permuteCoordinates_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.permuteCoordinates_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_permuteCoordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.permuteCoordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.isOpen_unitOpenCube": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_measure_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_isProbabilityMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_permute": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.squareCoordinates_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.squareCoordinates_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.cubeCoordinates_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.cubeCoordinates_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_cubeCoordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitSquare_mean_poincare_of_weak_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitCube_mean_poincare_of_weak_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.unitOpenCube_mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.unitOpenCube_mean_poincare_lpNorm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.integral_gradient_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.unitOpenCube_mean_poincare_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.sq_integral_le_integral_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.memLp_two_slice_right_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.memLp_two_integral_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_sq_integral_right_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_sq_sub_mean_prod_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_sq_sub_mean_prod_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitIntervalMeasure_isProbabilityMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitSquareMeasure_isProbabilityMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitCubeMeasure_isProbabilityMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitSquareMeasure_eq_volume_restrict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitCubeMeasure_eq_volume_restrict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitSquare_mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitCube_mean_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitCube_mean_poincare_lpNorm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.dirichletForm_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.dirichletForm_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.dirichletForm_self": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.poissonLoad_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.poissonLoad_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.poissonEnergyConstant_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.norm_sq_le_dirichletForm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.dirichletForm_coercive_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.dirichletForm_isCoercive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.isWeakPoissonSolution_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_unique_weakPoissonSolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsWeakPoissonSolution.norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.gradient_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_weakly_convergent_subsequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_unique_galerkinSolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.galerkin_error_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.domainL2SecondCountable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.exists_weakly_convergent_subsequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.galerkin_tendsto_of_approximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.initialTrialSpaceFiniteDimensional": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.initialTrialSpace_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.mem_initialTrialSpace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.initialTrialSpace_dense": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.eventually_exists_trial_approximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.galerkin_tendsto_of_dense": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_convergent_galerkin_sequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_poisson_galerkin_sequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.linearEvolution_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.linearEvolution_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.linearODE_energy_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.linearODE_energy_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.linearODE_norm_le_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.linearEvolution_energy_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.linearEvolution_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massForm_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massForm_isCoercive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolutionOperator_spec": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_weakEquation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_energy_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_energy_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.linearODE_unique_on": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massProjection_spec": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massProjection_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massProjection_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massProjection_bestApproximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialNormedAddCommGroup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialSeminormedAddCommGroup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialNormedSpace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialInnerProductSpace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialDualTopology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialValue_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialValue_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialDirichletForm_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialDirichletForm_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_weakEquation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_energy_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_integrated_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.norm_value_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.value_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.value_denseRange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatInitialProjection_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatInitialProjection_bestApproximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinFromL2_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinFromL2_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinFromL2_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinFromL2_integrated_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.eventually_exists_trial_L2approximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatInitialProjection_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatTrajectory_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H10.norm_sq_eq_value_add_dirichlet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatTrajectory_integrated_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatEnergySecondCountable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatTrajectory_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinInEnergySpace_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinInEnergySpace_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_exists_weak_subsequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedTimeForm_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedTimeForm_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.continuous_time_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.continuousTimeL2_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatMassForm_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatTimeResidual_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedTimeForm_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.dirichletForm_symm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_integrated_weakEquation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatTimeIntegrands_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatTimeResidual_galerkin_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatTimeResidual_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heat_weak_limit_solves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_integrated_weakHeatSolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.timeL2_weighted_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasL2TimeDerivative.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualNormedAddCommGroup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualSeminormedAddCommGroup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualNormedSpace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualTopology": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatMassInTime_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualDerivative_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualDerivative_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsIntegratedWeakHeatSolution.dual_integrated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsIntegratedWeakHeatSolution.hasL2TimeDerivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_past_smul_eq_future_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.timePrimitive_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.timePrimitive_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.timePrimitive_integrated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_eq_timePrimitive_of_integrated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualRepresentative_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualRepresentative_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsIntegratedWeakHeatSolution.dualRepresentative_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatDualRepresentative_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.absolutelyContinuousOnInterval_of_dist_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.intervalIntegral_absolutelyContinuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.absolutelyContinuous_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.absolutelyContinuous_clm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.absolutelyContinuous_norm_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.antitoneOn_of_absolutelyContinuous_of_deriv_nonpos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.timeL2_eq_zero_of_primitive_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsIntegratedWeakHeatSolution.sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsIntegratedWeakHeatSolution.eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsIntegratedWeakHeatSolution.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_unique_integrated_weakHeatSolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsIntegratedWeakHeatSolution.norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massVelocity_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massVelocity_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_stiffness_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_stiffness_energy_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_integrated_velocity_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.massEvolution_stiffness_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinVelocity_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinVelocity_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_stiffness_energy_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_integrated_velocity_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_stiffness_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkin_H1norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.trialH1Inclusion_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1InitialProjection_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1InitialProjection_bestApproximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1InitialProjection_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1InitialProjection_value_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Trajectory_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Trajectory_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Velocity_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Velocity_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Trajectory_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Velocity_integrated_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Trajectory_integrated_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Trajectory_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1Velocity_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatVelocitySecondCountable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1InEnergySpace_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1VelocityInL2_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1InEnergySpace_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1VelocityInL2_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1_exists_joint_weak_subsequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.time_integrated_of_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.time_integrated_initial_of_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedTimeFunctional_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedTimeFunctional_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.timeL2_weighted_clm_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.timeL2_weighted_map_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.timeL2_weighted_integral_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integrated_time_equation_of_weak_limits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatPhysicalInTime_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1_integrated_physical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1_weak_limit_integrated_physical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatPhysical_ae_primitive_of_integrated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatPhysical_hasL2TimeDerivative_of_integrated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatGalerkinVelocity_weakEquation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1_integrated_weakEquation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.heatH1_weak_limit_solves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_heatH1_solution_with_physical_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsIntegratedWeakHeatSolution.physical_trace_of_H1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_const_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.fderiv_eq_sum_coordDeriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.advection_eq_fderiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.divergence_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasDerivAt_material_along_characteristic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.deriv_material_along_characteristic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.continuityResidual_eq_material": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.satisfiesContinuityAt_iff_material": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.divergence_eq_zero_of_material_density_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.conservativeMomentum_eq_material_add_continuity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.conservativeMomentum_eq_of_continuity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.momentum_equation_iff_material": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.contDiff_coordDeriv_of_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_coordDeriv_comm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.divergence_differentiable_of_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tensorDivergence_newtonianStress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tensorDivergence_newtonianStress_of_divergence_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.continuous_coordDeriv_of_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integrable_mul_coordDeriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integrable_coordDeriv_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integrable_advection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_advection_eq_neg_divergence_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_advection_eq_zero_of_divergence_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.kineticEnergy_eq_half_dot": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.contDiff_kineticEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasCompactSupport_kineticEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_kineticEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.advection_kineticEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integrable_kineticConvection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_kineticConvection_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.incompressible_convection_energy_cancellation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.abs_sub_le_integral_abs_deriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.ae_abs_le_integral_abs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.ae_enorm_le_lintegral_enorm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_eLpNorm_le_of_line_integrals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.ae_unitOpenCube_update_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_unitOpenCube_of_ae_update": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_eLpNorm_three_halves_le_of_weak_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.eLpNorm_real_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_eLpNorm_six_le_of_memLp_of_weak_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.boundedSmoothApprox_contDiff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.boundedSmoothApprox_deriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.boundedSmoothApprox_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.boundedSmoothApprox_norm_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.boundedSmoothApprox_deriv_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.boundedSmoothApprox_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_eLpNorm_six_le_of_weak_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.unitOpenCube_sub_const_memLp_six": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.unitOpenCube_memLp_six": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.unitOpenCube_sub_const_sobolev_six": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.unitOpenCube_mean_sobolev_six": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.permuteCoordinates_update": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.densityInterpolationGain_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.densityInterpolationGain_lt_two_thirds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.densityInterpolationGain_holder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_density_weighted_interpolation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_entropy_le_weightedEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_dissipation_le_weightedEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedEnergy_le_of_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedEnergy_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_weighted_power_le_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_ofReal_sq_eq_lpNorm_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_ofReal_six_rpow_eq_lpNorm_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_ofReal_six_rpow_le_of_lpNorm_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_Ico_le_of_ae_cumulative_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedEnergy_le_of_ae_cumulative_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_deriv_eq_zero_on_level": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasDerivAt_abs_of_zero_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasDerivAt_positivePart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.absolutelyContinuous_positivePart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.ae_zero_on_level": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.positivePart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.exists_nonneg_absolutelyContinuous_representative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakDerivativeOnInterval.comp_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_unitOpenCube_update_of_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.deriv_testFunction_update": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.IsTestFunctionOn.unitOpenCube_update": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasWeakPartialOn_unitOpenCube_of_weak_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.memLp_positivePart_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.unitOpenCube_positivePart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.unitOpenCube_ae_zero_on_level": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.unitOpenCube_slope_congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.contDiff_oneSidedSlope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.oneSidedSlope_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.oneSidedSlope_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.oneSidedSlope_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.oneSidedCurvature_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasDerivAt_oneSidedPositivePart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasDerivAt_oneSidedSlope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.contDiff_oneSidedPositivePart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.oneSidedPositivePart_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.oneSidedPositivePart_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.oneSidedPositivePart_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tendsto_oneSidedPositivePart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tendsto_oneSidedSlope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.entropy_add_lintegral_le_of_approximation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.concaveOn_inv_of_differential_inequality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.not_concaveOn_inv_of_zero_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.not_differential_inequality_of_zero_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.const": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.const_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.value_const_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.derivative_const_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.value_lowerTruncation_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.derivative_lowerTruncation_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.ofReal_gradientEnergy_eq_lintegral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ratio_mul_le_of_inv_concave": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ratio_mul_le_of_differential_inequality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.not_tendsto_zero_of_inv_concave": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.fluidDot_self_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weighted_fluidDot_young": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.abs_weighted_fluidDot_young": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_abs_weighted_fluidDot_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tendsto_quadratic_diffusion_remainder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_damping_interpolation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_damping_power_le_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_weighted_power_le_larger_weight_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.weightedEnergy_le_of_ae_cumulative_budget_with_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unitOpenCube_restrict_eq_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tendsto_integral_mul_of_L1_of_bounded_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_norm_sq_sub_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tendsto_integral_norm_sq_sub_sq_of_L2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.energy_budget_of_weak_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.energy_budget_of_weak_limit_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.of_bounded_ae_of_weak_L2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_weak_partials_of_bounded_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_weak_partials_and_energy_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.cylinder_product_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_hasWeakPartialOn_of_test_identities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_hasWeakPartialOn_of_product_tests": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.isFiniteMeasure_intervalCylinder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.coordDeriv_cylinder_product_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakPartialOn.ae_spatial_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_all_spatial_weak_partials": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_H1_family_of_spatial_weak_partials": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_H1_family_of_cylinder_weak_partials": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ofReal_sum_L2norm_sq_eq_lintegral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_H1_family_with_prefix_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_subsequence_L1_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_H1_family_of_ae_prefix_weak_partials": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integrable_sq_of_ae_uniform_L2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tendsto_zero_of_sublinear_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tendsto_quadratic_energy_of_sublinear_work": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_rpow_le_measure_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_fourth_le_mixed_density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.compression_interpolation_exponents": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.integral_abs_compression_le_of_mixed_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.H1.unitOpenCube_six_squared_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.lintegral_cube_six_squared_le_of_H1_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_cube_compression_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasDerivAt_smoothDeficit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasDerivAt_deriv_smoothDeficit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.smoothDeficit_signs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.smoothDeficit_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.le_add_of_smoothDeficit_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_nonneg_of_interval_smooth_tests": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.exists_backward_entropy_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasWeakEntropyProduction.cumulative_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.ae_eq_initial_of_weak_conservation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.hasWeakEntropyProduction_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasExtendedWeakEntropyProduction.of_dominating_measure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasExtendedWeakEntropyProduction.truncated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasExtendedWeakEntropyProduction.cumulative_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasExtendedWeakEntropyProduction.finite_production": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.HasExtendedWeakEntropyProduction.to_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.not_hasExtendedWeakEntropyProduction_constant_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.unifIntegrable_of_higher_eLpNorm_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.memLp_and_tendsto_of_higher_bound_of_inMeasure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PDE.tendsto_L1_add_vanishing_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

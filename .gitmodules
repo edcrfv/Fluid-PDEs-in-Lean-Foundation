@@ -1,0 +1,3 @@
+[submodule "references/weiran-sun-pde"]
+	path = references/weiran-sun-pde
+	url = https://github.com/weiran-sun/pde.git
