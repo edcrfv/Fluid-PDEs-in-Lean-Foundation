@@ -14,6 +14,14 @@ physical L² traces for H₀¹ initial data; smooth fluid calculus identities.
 
 ## Next foundations
 
+The [interior smoothness theorem for distributional heat solutions](HEAT_INTERIOR_REGULARITY.md)
+is now proved, with matching English and Lean statements. Local mollification,
+strong L¹ convergence, the Gaussian fundamental solution, cutoff representation,
+compact smooth kernel replacements, and gluing give the jointly smooth
+representative on arbitrary open space–time domains. The pointwise heat equation
+and uniqueness are included. A separate adapter from the older Bochner energy
+solution API remains future interoperability work.
+
 1. General integer-order W^{k,p} spaces, higher/vector weak derivatives and completeness.
 2. Sobolev-norm mollification, convolution/derivative compatibility, trace and extension theory.
 3. General-domain mean Poincaré and additional Sobolev embeddings; Rellich compactness.

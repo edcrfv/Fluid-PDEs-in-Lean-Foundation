@@ -117,3 +117,17 @@ import PDE.IntervalWeakPositivePart
 import PDE.IntervalWeakNonnegativeChain
 import PDE.CubeWeakReassembly
 import PDE.CubeWeakPositivePart
+import PDE.HeatDistribution
+import PDE.HeatMollification
+import PDE.HeatApproximation
+import PDE.HeatApproximationL1
+import PDE.HeatGaussian
+import PDE.HeatGaussianInitial
+import PDE.HeatGaussianCausal
+import PDE.HeatGaussianIntegrability
+import PDE.HeatGaussianFundamental
+import PDE.HeatGaussianCoordinates
+import PDE.HeatCutoffRepresentation
+import PDE.HeatKernelExtension
+import PDE.HeatLocalRegularity
+import PDE.HeatInteriorRegularity

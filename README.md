@@ -16,7 +16,8 @@ The library provides open-domain weak derivatives and actual H¹/H₀¹ spaces;
 Poincaré and selected cube Sobolev estimates; a concrete Dirichlet Poisson
 existence/uniqueness result in dimensions at least three; Galerkin constructions;
 integrated weak heat existence/uniqueness and a physical L² trace for H₀¹ initial
-data; and smooth fluid calculus identities.
+data; interior C∞ regularity of locally integrable distributional heat solutions
+on arbitrary open domains; and smooth fluid calculus identities.
 
 [Implementation status](docs/STATUS.md) records the hypotheses and limitations.
 Some modules contain documentation of planned results, so an import is not
@@ -39,14 +40,21 @@ bash scripts/check.sh
 ```
 
 `lake build` also builds both default targets, `PDE` and `Checks`.
-The check script builds the shared library and four example modules with warnings
-as errors, then audits the transitive axioms of all 478 retained public roots.
+The check script builds the shared library and five example modules with warnings
+as errors, then audits the transitive axioms of all 560 current public roots.
 Only `propext`, `Classical.choice` and `Quot.sound` are allowed. It records source
 hashes and rejects source changes during verification. This is a Lean kernel
 build and named-root axiom audit, not an independent kernel replay.
 
 Results are written to `reports/latest.json` and `logs/<UTC timestamp>/`.
 The GitHub Actions workflow runs the same check.
+
+The local check environment permits one Lean compiler at a time, with two
+threads, a 3000 MiB Lean memory limit and a 3500 MiB build-tree RSS watchdog.
+The watchdog leaves headroom below the requested 4 GB local-work budget; on macOS
+it samples process memory rather than imposing a hard operating-system limit.
+For direct compiler checks, source `scripts/env.sh` in Bash and use
+`lake env "$LEAN" file.lean`; `lake env lean` can bypass the wrapper through PATH.
 The initial standalone snapshot passed on 2026-10-06; its
 [verification report](reports/foundation-verification.json) and logs are retained.
 
