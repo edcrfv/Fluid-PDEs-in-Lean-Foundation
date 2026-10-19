@@ -1,4 +1,7 @@
-import PDE
+import PDE.LaxMilgram
+import PDE.Sobolev
+import PDE.EllipticWeakSolutions
+import PDE.HeatUniqueness
 
 /-! Public API examples, including the full three-dimensional Poisson weak equation. -/
 

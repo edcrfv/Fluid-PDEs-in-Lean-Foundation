@@ -3,3 +3,4 @@ import Checks.Examples
 import Checks.FluidExamples
 import Checks.MeanPoincareExamples
 import Checks.DistributionalIntervalExamples
+import Checks.HeatInteriorExamples

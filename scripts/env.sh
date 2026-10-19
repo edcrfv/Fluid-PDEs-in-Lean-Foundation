@@ -12,7 +12,7 @@ if ! command -v lake >/dev/null 2>&1; then
 fi
 export PDE_REPO_ROOT
 export LEAN_NUM_THREADS="${LEAN_NUM_THREADS:-2}"
-if [[ "${PDE_LIMIT_COMPILERS:-0}" == 1 ]]; then
+if [[ "${PDE_LIMIT_COMPILERS:-1}" == 1 ]]; then
   PDE_REAL_LEAN="$(command -v lean)"
   export PDE_REAL_LEAN
   export LEAN="$PDE_REPO_ROOT/scripts/lean-limited.py"

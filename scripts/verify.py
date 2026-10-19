@@ -25,7 +25,7 @@ def main():
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sources}
     expected = re.findall(r"^#print axioms (\S+)$", (ROOT / "Checks/Axioms.lean").read_text(), re.M)
     report = {"checked_at_utc": timestamp, "status": "failed", "source_sha256": hashes,
-              "scope": "Shared PDE foundation and four example modules; all retained named public roots have transitive Lean axiom audits. Independent replay is not included.",
+              "scope": "Shared PDE foundation and five example modules; all retained named public roots have transitive Lean axiom audits. Independent replay is not included.",
               "build_targets": ["PDE", "Checks"],
               "independent_kernel_replay": False, "allowed_axioms": sorted(ALLOWED), "commands": []}
     try:

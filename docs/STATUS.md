@@ -1,7 +1,8 @@
 # Foundation implementation status
 
-This standalone snapshot retains the shared PDE foundation and 478 public theorem
-audit roots. Its verification scope is `PDE` and foundation-only `Checks`.
+The initial standalone snapshot retained 478 public theorem audit roots.
+The heat interior regularity work adds 82 heat roots, for 560 in the current
+checkout. Its verification scope is `PDE` and foundation-only `Checks`.
 See `reports/latest.json` after running `bash scripts/check.sh` for the current
 build, source hashes and axiom audit. No research-project result is included.
 
@@ -162,6 +163,20 @@ energy identity, or physical time regularity for arbitrary L² initial data.
 
 | Module | Exact implemented scope |
 |---|---|
+| `HeatInteriorRegularity` | Full interior smoothness theorem for locally integrable distributional heat solutions on arbitrary open space–time sets, and the cylinder corollary; joint C∞ representative, a.e. equality, pointwise heat equation, and uniqueness |
+| `HeatLocalRegularity` | Strong L¹ passage through the fixed-kernel cutoff formula yields a smooth local representative near every interior point |
+| `HeatKernelExtension` | Compact smooth replacements for kernels smooth off zero; one neighborhood and fixed convolution kernels valid for all smooth caloric inputs |
+| `HeatDistribution` | Space–time distributional heat equation; integrable test pairings; a.e. invariance, restriction, linear operations; uniqueness of continuous representatives; proved equivalence with the pointwise equation for an already smooth input |
+| `HeatMollification` | Compact localization of arbitrary distributional heat solutions; smooth convolution, first/second coordinate derivative transfer, and preservation of the pointwise equation wherever the translated kernel stays inside the localization interior |
+| `HeatApproximation` | Concrete normalized bumps with radii tending to zero; localized smooth convolutions converge a.e. to the original solution and are eventually caloric at each interior point; no derivative convergence or smooth limit is asserted |
+| `HeatGaussianCoordinates` | Measure-preserving conversion to coordinate-zero time; native-coordinate fundamental-solution identity, local integrability, smoothness off the source, and representation of a compact smooth function by its heat residual |
+| `HeatCutoffRepresentation` | Cutoff product rule in divergence form, integration by parts off the kernel source, and a local representation for smooth functions caloric on the cutoff support; no derivatives of the solution remain on the right-hand side; passage to weak solutions is implemented in `HeatLocalRegularity` |
+| `HeatGaussianIntegrability` | Integrability on finite time strips, local integrability across the space–time source, and absolute integrability of continuous compact-support pairings, for n > 0 |
+| `HeatGaussianFundamental` | Differentiation of smooth test pairings, spatial integration by parts, and the fundamental-solution identity as iterated and single space–time integrals; product coordinates with time first; no local weak-solution representation yet |
+| `HeatGaussianInitial` | Parabolic scaling and the initial Dirac limit against bounded continuous space–time tests in arbitrary dimension; integrability of pairings and pointwise recovery of bounded continuous initial data by Gaussian convolution |
+| `HeatGaussianCausal` | Smooth zero extension of real powers times exp(-1/t); the Gaussian vanishes for nonpositive times when n > 0 and is jointly smooth away from its space–time source, including across time zero |
+| `HeatGaussian` | Arbitrary-dimensional normalized Gaussian: positivity, integrability, mass one, joint smoothness at positive time, explicit first/second spatial and time derivatives, and the classical heat equation; no causal extension or local representation formula |
+| `HeatApproximationL1` | L¹ contraction for normalized nonnegative convolution; strong L¹ convergence of the localized approximations and local L¹ convergence to the original solution; one eventual index for the heat equation across each compact interior subset |
 | `WeakDerivative` | Whole-space first weak coordinate derivatives; local integrability, zero, addition, scalar multiplication, a.e. uniqueness |
 | `WeakDerivativeOn` | Smooth compact-support tests inside Ω; restricted integration, support/integrability lemmas, zero/add/scalar operations, a.e. invariance, restriction to smaller domains, uniqueness on open domains, whole-space compatibility |
 | `ClassicalWeakDerivative` | C¹ on an open Ω implies the classical coordinate derivatives are weak derivatives, by an actual integration-by-parts theorem |
@@ -228,6 +243,13 @@ energy identity, or physical time regularity for arbitrary L² initial data.
 | `IncompressibleEnergy` | C¹ compact-support scalar transport integration by parts, actual integrability, kinetic chain rule, and divergence-free convection cancellation on whole space |
 
 ## Open portions of the roadmap
+
+The [interior heat regularity theorem](HEAT_INTERIOR_REGULARITY.md) is proved as
+`PDE.heat_interior_smooth`, with the stronger arbitrary-open-set theorem
+`IsDistributionalHeatSolution.exists_smooth_representative`. Its documented
+example applies the proved theorem. A separate adapter from the older Bochner
+`IsIntegratedWeakHeatSolution` API to the scalar distributional API remains open;
+it is not a hypothesis or an asserted consequence of the theorem above.
 
 - General W^{k,p} quotient spaces and completeness; higher/vector weak derivatives.
 - Convolution commutation and Lᵖ/Sobolev convergence; general trace/extension machinery.
