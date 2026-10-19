@@ -1,0 +1,232 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.82in,headheight=14pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,microtype}
+\usepackage{xcolor,hyperref,fancyhdr,listings,enumitem,booktabs,tabularx}
+\definecolor{ink}{HTML}{18364A}
+\definecolor{wash}{HTML}{F3F6F8}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=ink,pdftitle={Interior smoothness of weak heat solutions},pdfauthor={Fluid PDEs in Lean Foundation}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\textsc{Fluid PDEs in Lean Foundation}}
+\fancyhead[R]{\small Interior regularity}
+\fancyfoot[C]{\small\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\setlist{leftmargin=*,itemsep=5pt,topsep=4pt}
+\newtheorem{theorem}{Theorem}
+\newcommand{\R}{\mathbb R}
+\newcommand{\D}{\mathcal D}
+\newcommand{\Lloc}{L^1_{\mathrm{loc}}}
+\lstset{basicstyle=\ttfamily\footnotesize,backgroundcolor=\color{wash},
+  frame=single,rulecolor=\color{black!15},framesep=7pt,
+  columns=fullflexible,keepspaces=true,breaklines=true,showstringspaces=false,
+  escapeinside={(*@}{@*)}}
+\setlength{\emergencystretch}{2em}
+\begin{document}
+{\color{ink}\LARGE\bfseries Interior smoothness of weak heat solutions\par}
+{\large English theorem, checked Lean statement, and proof outline\par}
+{\small Prepared 18 October 2026\quad\textbullet\quad Homogeneous equation, diffusivity one}
+
+\section*{1. Precise mathematical statement}
+Write a space--time point as $z=(t,x)\in\R\times\R^n$, and let
+$P=\partial_t-\Delta_x$. All smoothness below is joint in time and space.
+
+\begin{theorem}[Interior regularity on an open cylinder]
+Let $n\geq1$, let $\Omega\subseteq\R^n$ be open, let $T>0$, and set
+$Q=(0,T)\times\Omega$. Suppose $u\in\Lloc(Q)$ and
+\begin{equation}\label{eq:weak}
+  \int_Q u(t,x)\bigl(\partial_t\varphi(t,x)+\Delta_x\varphi(t,x)\bigr)
+  \,dt\,dx=0
+  \qquad\text{for every }\varphi\in C_c^\infty(Q).
+\end{equation}
+Then there is a unique $v\in C^\infty(Q)$ such that $u=v$ almost everywhere on
+$Q$. Moreover,
+\[
+  \partial_t v(t,x)=\Delta_x v(t,x)\qquad\text{at every }(t,x)\in Q.
+\]
+Uniqueness is among smooth representatives of this same almost-everywhere
+class on $Q$.
+\end{theorem}
+
+Equation~\eqref{eq:weak} is precisely $Pu=0$ in distributions. Its plus sign
+is intentional: integration by parts gives
+$\langle Pu,\varphi\rangle=-\int u(\partial_t\varphi+\Delta_x\varphi)$.
+The formalization assumes local integrability, without pointwise differentiability
+of $u$.
+
+\textbf{Stronger proved form.}
+The same conclusion holds for any open $Q\subseteq\R^{n+1}$; a product
+structure is unnecessary. The cylinder theorem follows from this result.
+
+\section*{2. Domain assumptions and boundary scope}
+Only openness of $\Omega$ is needed. It need not be bounded, connected, or
+have a Lipschitz boundary. Each point of $Q$ has a neighborhood whose closure
+lies in $Q$, and the proof works in that neighborhood.
+
+The theorem gives no extension of smoothness to $\partial\Omega$, $t=0$, or
+$t=T$, and no uniform derivative estimates as these sets are approached.
+An irregular boundary may affect such boundary conclusions without affecting
+interior smoothness. A graph such as $y=\sqrt{x}$ has an unbounded slope in
+that coordinate system; this alone does not settle whether the surrounding
+domain is Lipschitz, since boundary charts can be rotated.
+
+The representative qualification is essential: altering $u$ on a null set
+can destroy pointwise continuity while preserving~\eqref{eq:weak}.
+
+\newpage
+\section*{3. Proof outline matching the formalization}
+The following explains the checked proof; the complete formal proof is in the
+repository modules listed on page~\pageref{sec:verification}.
+
+\textbf{Step 1: Localize and regularize.}
+Fix $z_0\in Q$. Choose a compact neighborhood $K\subset Q$ and a smooth
+cutoff $\chi$ supported in $\operatorname{int}K$, with $\chi=1$ near $z_0$.
+Extend $u\mathbf1_K$ by zero and convolve with normalized smooth bumps whose
+radii tend to zero. The resulting $u_j$ are smooth, converge to the localized
+input in $L^1$ and almost everywhere, and are eventually caloric across the
+whole compact set $\operatorname{supp}\chi$. The last assertion follows by
+transferring derivatives to test kernels in the distributional identity.
+
+\textbf{Step 2: Prove the fundamental-solution identity.}
+Construct the causal Gaussian
+\[
+ H(t,x)=\begin{cases}
+ (4\pi t)^{-n/2}\exp\!\bigl(-|x|^2/(4t)\bigr),&t>0,\\
+ 0,&t\leq0.
+ \end{cases}
+\]
+It is locally integrable, smooth away from $(0,0)$, has unit spatial mass
+at positive times, and approaches the spatial Dirac mass initially. The proved
+identity, for smooth compactly supported $\varphi$, is
+\[
+  \int_{\R^{n+1}} H(z)(\partial_t\varphi+\Delta_x\varphi)(z)\,dz
+  =-\varphi(0).
+\]
+Equivalently, $PH=\delta_0$. The proof uses explicit Gaussian derivatives,
+integration by parts, the initial limit, and Fubini.
+
+\textbf{Step 3: Remove derivatives of the solution.}
+Apply the fundamental solution to $\chi u_j$. The cutoff product rule and
+spatial integration by parts give, for $z$ near $z_0$,
+\begin{align*}
+ u_j(z)={}&\int H(z-y)u_j(y)
+                   (\partial_t\chi+\Delta_x\chi)(y)\,dy\\
+ &-2\sum_{i=1}^n\int(\partial_{x_i}H)(z-y)u_j(y)
+                                      \partial_{x_i}\chi(y)\,dy.
+\end{align*}
+All derivatives on the right act on the cutoff or kernel.
+
+\textbf{Step 4: Pass to the weak solution.}
+The supports of the differentiated cutoffs avoid $z_0$. Shrink its neighborhood
+so that each kernel can be replaced, on all relevant differences $z-y$, by a
+fixed compactly supported smooth kernel. The right side then defines a smooth
+function $v$, since it is a sum of convolutions of integrable functions with
+smooth compact kernels. Strong $L^1$ convergence passes the representation to
+$v$, and almost-everywhere convergence identifies $v$ with $u$ locally.
+Thus the smoothness of the limit comes from a fixed convolution representation.
+
+\textbf{Step 5: Glue and recover the equation.}
+Local smooth representatives agree on overlaps: continuous functions equal
+almost everywhere on an open set agree everywhere there. Glue them, using a
+countable subcover to preserve global almost-everywhere equality. The proved
+classical/distributional equivalence for smooth functions gives $Pv=0$
+pointwise. The same continuity argument gives uniqueness.
+
+\newpage
+\section*{4. Exact Lean statement and proof application}
+The code below is the example extracted from the repository documentation and
+compiled successfully. Here \texttt{Space (n + 1)} is
+\texttt{Fin (n + 1)} $\to\R$: coordinate $0$ is time and coordinates
+\texttt{i.succ} are spatial. The measure is space--time Lebesgue measure.
+
+\begin{lstlisting}
+import PDE.HeatInteriorRegularity
+
+open MeasureTheory Set
+open scoped ContDiff BigOperators
+
+namespace PDE.HeatInteriorSpecification
+
+example (n : (*@$\mathbb N$@*)) (hn : 0 < n)
+    ((*@$\Omega$@*) : Set (Space n)) (h(*@$\Omega$@*) : IsOpen (*@$\Omega$@*))
+    (T : (*@$\mathbb R$@*)) (hT : 0 < T)
+    (u : Space (n + 1) (*@$\to$@*) (*@$\mathbb R$@*))
+    (hu : IsDistributionalHeatSolution (heatCylinder (*@$\Omega$@*) T) u) :
+    (*@$\exists$@*) v : Space (n + 1) (*@$\to$@*) (*@$\mathbb R$@*),
+      ContDiffOn (*@$\mathbb R$@*) (*@$\infty$@*) v (heatCylinder (*@$\Omega$@*) T) (*@$\wedge$@*)
+      u =(*@${}^{\mathrm m}$@*)[volume.restrict (heatCylinder (*@$\Omega$@*) T)] v (*@$\wedge$@*)
+      ((*@$\forall$@*) z (*@$\in$@*) heatCylinder (*@$\Omega$@*) T,
+        coordDeriv 0 v z = spaceTimeLaplacian v z) (*@$\wedge$@*)
+      ((*@$\forall$@*) w : Space (n + 1) (*@$\to$@*) (*@$\mathbb R$@*),
+        ContDiffOn (*@$\mathbb R$@*) (*@$\infty$@*) w (heatCylinder (*@$\Omega$@*) T) (*@$\to$@*)
+        u =(*@${}^{\mathrm m}$@*)[volume.restrict (heatCylinder (*@$\Omega$@*) T)] w (*@$\to$@*)
+        EqOn w v (heatCylinder (*@$\Omega$@*) T)) :=
+  heat_interior_smooth hn h(*@$\Omega$@*) hT hu
+
+end PDE.HeatInteriorSpecification
+\end{lstlisting}
+
+\texttt{IsDistributionalHeatSolution Q u} contains exactly local integrability
+and the test identity~\eqref{eq:weak}. The output includes joint smoothness,
+almost-everywhere equality, the pointwise equation, and uniqueness on the domain.
+The function $v$ is defined on all of $\R^{n+1}$ in Lean, but its values outside
+$Q$ are unrestricted by this conclusion.
+
+\newpage
+\section*{5. Worked examples}
+In one spatial dimension, $u(t,x)=x^2+2t$ satisfies
+\[
+  \partial_tu=2=\partial_x^2u.
+\]
+The checked polynomial example establishes the distributional equation using
+the proved smooth classical/weak equivalence. It also checks the derivative
+and sign conventions used throughout the development.
+
+In two spatial dimensions, consider the open cusp
+\[
+ \Omega_{\mathrm{cusp}}=
+ \{(x_1,x_2):0<x_1<1,\ |x_2|<x_1^2\}.
+\]
+The second checked example proves openness directly from these strict
+inequalities, then applies the theorem to any distributional heat solution on
+$(0,1)\times\Omega_{\mathrm{cusp}}$. No boundary regularity hypothesis enters
+that application. The example does not formalize a separate geometric theorem
+about non-Lipschitzness of this cusp.
+
+\section*{6. Formal implementation and verification}\label{sec:verification}
+\begin{tabularx}{\linewidth}{@{}p{0.39\linewidth}X@{}}
+\toprule
+\textbf{Module family} & \textbf{Role}\\\midrule
+\texttt{HeatDistribution} & Weak equation, a.e. invariance, classical equivalence.\\
+\texttt{HeatMollification},\newline\texttt{HeatApproximation},\newline\texttt{HeatApproximationL1} & Smooth caloric approximations and strong $L^1$ convergence.\\
+\texttt{HeatGaussian*} & Gaussian calculus, initial limit, causal smoothness, integrability, and fundamental identity.\\
+\texttt{HeatCutoffRepresentation},\newline\texttt{HeatKernelExtension} & Local representation and fixed smooth replacement kernels.\\
+\texttt{HeatLocalRegularity},\newline\texttt{HeatInteriorRegularity} & Local smooth representatives, gluing, and the final theorems.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{Checked baseline.} Commit \texttt{4324148}, prepared 18 October 2026.
+The full library and five example modules passed
+\texttt{bash scripts/check.sh}. All 560 named theorem roots were audited,
+including 82 added heat roots. Only \texttt{propext}, \texttt{Classical.choice},
+and \texttt{Quot.sound} occur; there are no \texttt{sorry} proofs or new axioms.
+This is a Lean kernel build and transitive axiom audit; an independent kernel
+replay was not performed.
+
+The documented example passed
+\texttt{python3 scripts/check-heat-interior-statement.py}.
+Lean is pinned to \texttt{4.34.0-rc2}; Mathlib is pinned to
+\texttt{85e3a25e006c35636f0e53b0e9296caca2685bc0}.
+Compilation uses a 3000 MiB Lean budget and a sampled 3500 MiB process-tree
+RSS guard. No subagents were used.
+
+\textbf{Solution-class scope.} The theorem uses the scalar distributional
+predicate above. An adapter from the older Bochner
+\texttt{IsIntegratedWeakHeatSolution} API remains separate future work.
+
+\small
+\textbf{Source:} \href{https://github.com/edcrfv/Fluid-PDEs-in-Lean-Foundation}{GitHub repository}.\par
+Branch: \path{examples/heat-interior-regularity}. Exact proof:
+\path{PDE/HeatInteriorRegularity.lean}; examples:
+\path{Checks/HeatInteriorExamples.lean}. Repository licensing and attribution
+are recorded in \texttt{LICENSING.md}.
+\end{document}
